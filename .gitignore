@@ -1,3 +1,7 @@
 .DS_Store
 Thumbs.db
 *.log
+
+# rocky.json is a third-party fan-made model of a copyrighted character — keep it LOCAL only.
+# the hologram falls back to a procedural eridian when it's absent, so the public site ships clean.
+assets/rocky.json

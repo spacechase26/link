@@ -1,24 +1,25 @@
 # link
 
-my link-in-bio → https://spacechase26.github.io/link/
+my little corner of the internet → https://spacechase26.github.io/link/
 
-it's a single **holographic trading card**: move your cursor to tilt it and
-catch the foil/glare, tap it to flip — front is socials, back is the stuff i
-build. plain html/css/js, no build step.
+a hard-sci-fi "crew terminal" — project hail mary meets interstellar. a living
+starfield you can drift through, a planet on the horizon, a spinning galaxy you can
+poke, and a low-poly hologram down the bottom. all the actual links (socials +
+projects) live inside the console. plain html/css/js, no build step.
 
 ## structure
-- `index.html` — the card markup + an svg icon sprite
-- `css/style.css` — design tokens up top, then the card / holo / flip styles
-- `js/main.js` — pointer tilt, holo tracking, tap-to-flip
-- `assets/` — avatar + favicon
+- `index.html` — the console markup + an svg icon sprite
+- `css/style.css` — design tokens up top, then the scene + module styles
+- `js/config.js` — edit this one: name, links, projects, log, and the look knobs
+- `js/main.js` — starfield, the live readouts, and the hologram renderer
+- `assets/` — avatar, favicon, icon sprite
 
-## restyle
-everything tweakable lives in `:root` at the top of `css/style.css`
-(`--holo` controls foil intensity, `--card-w` the size, plus the colors).
-
-## avatar
-`assets/avatar.svg` is a placeholder. drop in a real photo and point the
-front `<img>` in `index.html` at it (e.g. `assets/avatar.jpg`).
+## make it yours
+open `js/config.js` and change the values — name, socials, projects, the lot. the
+visual knobs (star brightness, comet rate, hologram spin, red-fade) are in the
+`look` block at the bottom of the same file.
 
 ## deploy
-pushes to `main` auto-deploy via github actions → pages.
+pushes to `main` auto-deploy via github actions → pages. heavy bits (the hologram,
+the cursor flourishes) idle when off-screen or on touch/low-end devices so it stays
+light.
