@@ -19,6 +19,8 @@ open `js/config.js` and change the values — name, socials, projects, the lot. 
 visual knobs (star brightness, comet rate, hologram spin, red-fade) are in the
 `look` block at the bottom of the same file.
 
+full manual — every field, the hidden bits, the hologram, deploy → [GUIDE.md](GUIDE.md)
+
 ## deploy
 pushes to `main` auto-deploy via github actions → pages. heavy bits (the hologram,
 the cursor flourishes) idle when off-screen or on touch/low-end devices so it stays
